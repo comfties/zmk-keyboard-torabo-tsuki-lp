@@ -23,7 +23,7 @@
         layer_Bottom {
             bindings = <
 &trans                 &trans            &trans             &trans      &trans         &trans                                 &trans         &trans  &trans    &trans    &trans        &trans
-&mt LANGUAGE_5 ESCAPE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp R          &kp T                                  &kp INT_YEN    &kp U   &kp LBKT  &kp RBKT  &kp PERCENT   &kp MINUS
+&mt LANGUAGE_5 ESCAPE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp R          &kp T                                  &kp INT_YEN    &kp U   &kp LBKT  &kp RBKT  &kp PERCENT   &kp TILDE2
 &kp TAB                &kp AT            &kp ASTRK          &kp DOLLAR  &kp F          &kp G          &trans       &trans     &kp HASH       &kp J   &kp LPAR  &kp RPAR  &kp SEMI      &kp SQT
 &kp LSHFT              &kp Z             &kp X              &kp C       &kp V          &kp BACKSLASH  &mkp LCLK    &mkp RCLK  &kp AMPERSAND  &kp M   &kp LBRC  &kp RBRC  &kp UP_ARROW  &kp SLASH
 &kp LCTRL              &kp LEFT_WIN      &kp LEFT_ALT       &kp DEL     &kp BACKSPACE  &kp ENTER      &lt 1 SPACE  &mo 2      &mo 3          &trans  &trans    &kp LEFT  &kp DOWN      &kp RIGHT
