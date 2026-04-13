@@ -6,6 +6,14 @@
 
 / {
     combos { compatible = "zmk,combos"; };
+behaviors {
+        /* 移動量を半分(1/2)にする計算機 */
+        zip_xy_scaler: zip_xy_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_REL_XY>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -70,4 +78,10 @@
             >;
         };
     };
+};
+&trackball_listener {
+    status = "okay";
+    snipe-layers = <5>;
+    /* レイヤー5のとき、移動量を 1 / 2 倍にする */
+    input-processors = <&zip_xy_scaler 1 2>;
 };
