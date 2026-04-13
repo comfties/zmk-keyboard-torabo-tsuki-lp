@@ -24,7 +24,7 @@
             bindings = <
 &trans                 &trans            &trans             &trans      &trans         &trans                                 &trans         &trans  &trans    &trans    &trans        &trans
 &mt LANGUAGE_5 ESCAPE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp R          &kp T                                  &kp INT3       &kp U   &kp LBKT  &kp RBKT  &kp PERCENT   &kp TILDE2
-&kp TAB                &kp AT            &kp ASTRK          &kp DOLLAR  &kp F          &kp G          &trans       &trans     &kp HASH       &kp J   &kp LPAR  &kp RPAR  &kp SEMI      &kp SQT
+&kp TAB                &kp AT            &kp ASTRK          &kp DOLLAR  &kp F          &kp G          &trans       &trans     &kp HASH       &kp J   &kp LPAR  &kp RPAR  &kp SEMI      &kp PIPE
 &kp LSHFT              &kp Z             &kp X              &kp C       &kp V          &kp BACKSLASH  &mkp LCLK    &mkp RCLK  &kp AMPERSAND  &kp M   &kp LBRC  &kp RBRC  &kp UP_ARROW  &kp SLASH
 &kp LCTRL              &kp LEFT_WIN      &kp LEFT_ALT       &kp DEL     &kp BACKSPACE  &kp ENTER      &lt 1 SPACE  &mo 2      &mo 3          &trans  &trans    &kp LEFT  &kp DOWN      &kp RIGHT
             >;
@@ -42,21 +42,31 @@
 
         layer3_Function {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans                      &trans            &trans      &trans        &trans        &trans         &trans
-&trans  &out OUT_USB  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR                  &trans            &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LC(V))  &trans
-&trans  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &kp LEFT          &kp DOWN    &kp UP_ARROW  &kp RIGHT     &kp TAB        &trans
-&trans  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &kp SINGLE_QUOTE  &kp DQT     &kp GRAVE     &kp TILDE     &kp PIPE       &trans
-&trans  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans            &trans      &trans        &trans        &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans                      &trans  &trans      &trans        &trans        &trans         &trans
+&trans  &out OUT_USB  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR                  &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LC(V))  &trans
+&trans  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans      &trans        &trans        &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans      &trans        &trans        &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans      &trans  &trans  &trans  &trans      &trans        &trans        &trans         &trans
             >;
         };
 
         layer4_Mouse {
             bindings = <
-&trans  &trans  &trans     &trans      &trans       &trans                  &trans         &trans          &trans     &trans           &trans          &trans
-&trans  &trans  &trans     &trans      &trans       &trans                  &trans         &msc SCRL_LEFT  &mkp MCLK  &msc SCRL_RIGHT  &trans          &trans
-&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &kp PAGE_UP    &mkp LCLK       &mkp RCLK  &msc SCRL_UP     &mmv MOVE_UP    &trans
-&trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans  &kp PAGE_DOWN  &mkp MB4        &mkp MB5   &msc SCRL_DOWN   &mmv MOVE_DOWN  &trans
-&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans         &trans          &trans     &trans           &trans          &trans
+&trans  &trans  &trans     &trans      &trans       &trans                  &trans  &trans          &trans     &trans           &trans     &trans
+&trans  &trans  &trans     &trans      &trans       &trans                  &trans  &msc SCRL_LEFT  &mkp MCLK  &msc SCRL_RIGHT  &trans     &trans
+&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &mkp LCLK       &mkp RCLK  &msc SCRL_UP     &kp PG_UP  &trans
+&trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans  &trans  &mkp MB4        &mkp MB5   &msc SCRL_DOWN   &kp PG_DN  &trans
+&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &trans          &trans     &trans           &trans     &trans
+            >;
+        };
+
+        layer5_Snipe {
+            bindings = <
+&trans  &trans  &trans     &trans      &trans       &trans                  &trans  &trans          &trans     &trans           &trans     &trans
+&trans  &trans  &trans     &trans      &trans       &trans                  &trans  &msc SCRL_LEFT  &mkp MCLK  &msc SCRL_RIGHT  &trans     &trans
+&trans  &trans  &trans     &trans      &mo 5        &trans  &trans  &trans  &trans  &mkp LCLK       &mkp RCLK  &msc SCRL_UP     &kp PG_UP  &trans
+&trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans  &trans  &mkp MB4        &mkp MB5   &msc SCRL_DOWN   &kp PG_DN  &trans
+&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &trans          &trans     &trans           &trans     &trans
             >;
         };
     };
