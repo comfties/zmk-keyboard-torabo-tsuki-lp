@@ -71,3 +71,6 @@
         };
     };
 };
+&trackball_listener {
+    snipe-layers = <5>;
+};
