@@ -54,8 +54,8 @@
             bindings = <
 &trans  &trans  &trans     &trans      &trans       &trans                  &trans  &trans          &trans     &trans           &trans     &trans
 &trans  &trans  &trans     &trans      &trans       &trans                  &trans  &msc SCRL_LEFT  &mkp MCLK  &msc SCRL_RIGHT  &trans     &trans
-&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &mkp LCLK       &mkp RCLK  &msc SCRL_UP     &kp PG_UP  &trans
-&trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans  &trans  &mkp MB4        &mkp MB5   &msc SCRL_DOWN   &kp PG_DN  &trans
+&trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &mkp LCLK       &mkp RCLK  &msc MOVE_Y(50)     &kp PG_UP  &trans
+&trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans  &trans  &mkp MB4        &mkp MB5   &msc MOVE_Y(-50)   &kp PG_DN  &trans
 &trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &trans          &trans     &trans           &trans     &trans
             >;
         };
