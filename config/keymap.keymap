@@ -70,7 +70,11 @@
             >;
         };
     };
-};
-&trackball_listener {
-    snipe-layers = <5>;
-};
+    /* ↓ ここを追加（ / { の中に入れます） */
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        snipe-layers = <5>;
+    };
+
+}; 
