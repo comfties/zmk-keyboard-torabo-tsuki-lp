@@ -69,13 +69,4 @@
 &trans  &trans  &trans     &trans      &trans       &trans  &trans  &trans  &trans  &trans          &trans     &trans           &trans     &trans
             >;
         };
-    }; /* 72行目：keymapブロックの終わり */
-
-    /* トラックボールの設定（ / { の中に入れます） */
-    &trackball_listener {
-        status = "okay";
-        snipe-layers = <5>;
-        snipe-cpi = <500>; /* ここに直接スナイプ時の速度を書くのが正解です */
-    };
-
-}; /* 最後に必ずこのカッコが必要です（ファイル全体の終わり） */
+     };
