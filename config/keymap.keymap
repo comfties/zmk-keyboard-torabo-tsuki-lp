@@ -12,31 +12,31 @@
 
         layer_Top {
             bindings = <
-&trans                          &trans        &trans        &trans   &trans         &trans                               &trans  &trans  &trans     &trans    &trans        &trans
-&mt LANG_ZENKAKUHANKAKU ESCAPE  &kp Q         &kp W         &kp E    &kp R          &kp T                                &kp Y   &kp U   &kp I      &kp O     &kp P         &kp MINUS
-&kp TAB                         &kp A         &kp S         &kp D    &kp F          &kp G        &trans       &trans     &kp H   &kp J   &kp K      &kp L     &kp SEMI      &kp SQT
-&kp LSHFT                       &kp Z         &kp X         &kp C    &kp V          &kp B        &mkp LCLK    &mkp RCLK  &kp N   &kp M   &kp COMMA  &kp DOT   &kp UP_ARROW  &kp SLASH
-&kp LCTRL                       &kp LEFT_WIN  &kp LEFT_ALT  &kp DEL  &kp BACKSPACE  &lt 4 ENTER  &lt 1 SPACE  &mo 2      &mo 3   &trans  &trans     &kp LEFT  &kp DOWN      &kp RIGHT
+&trans     &trans        &trans        &trans   &trans         &trans                               &trans  &trans  &trans     &trans    &trans        &trans
+&kp ESC    &kp Q         &kp W         &kp E    &kp R          &kp T                                &kp Y   &kp U   &kp I      &kp O     &kp P         &kp MINUS
+&kp TAB    &kp A         &kp S         &kp D    &kp F          &kp G        &trans       &trans     &kp H   &kp J   &kp K      &kp L     &kp SEMI      &kp SQT
+&kp LSHFT  &kp Z         &kp X         &kp C    &kp V          &kp B        &mkp LCLK    &mkp RCLK  &kp N   &kp M   &kp COMMA  &kp DOT   &kp UP_ARROW  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp DEL  &kp BACKSPACE  &lt 4 ENTER  &lt 1 SPACE  &mo 2      &mo 3   &trans  &trans     &kp LEFT  &kp DOWN      &kp RIGHT
             >;
         };
 
         layer_Bottom {
             bindings = <
-&trans                 &trans            &trans             &trans      &trans         &trans                                 &trans         &trans  &trans    &trans    &trans        &trans
-&mt LANGUAGE_5 ESCAPE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp R          &kp T                                  &kp INT3       &kp U   &kp LBKT  &kp RBKT  &kp PERCENT   &kp TILDE2
-&kp TAB                &kp AT            &kp ASTRK          &kp DOLLAR  &kp F          &kp G          &trans       &trans     &kp HASH       &kp J   &kp LPAR  &kp RPAR  &kp SEMI      &kp PIPE
-&kp LSHFT              &kp Z             &kp X              &kp C       &kp V          &kp BACKSLASH  &mkp LCLK    &mkp RCLK  &kp AMPERSAND  &kp M   &kp LBRC  &kp RBRC  &kp UP_ARROW  &kp SLASH
-&kp LCTRL              &kp LEFT_WIN      &kp LEFT_ALT       &kp DEL     &kp BACKSPACE  &kp ENTER      &lt 1 SPACE  &mo 2      &mo 3          &trans  &trans    &kp LEFT  &kp DOWN      &kp RIGHT
+&trans     &trans            &trans             &trans      &trans         &trans                                 &trans         &trans  &trans    &trans    &trans        &trans
+&kp ESC    &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp EXCL    &kp R          &kp T                                  &kp INT3       &kp U   &kp LBKT  &kp RBKT  &kp PERCENT   &kp TILDE2
+&kp TAB    &kp AT            &kp ASTRK          &kp DOLLAR  &kp F          &kp G          &trans       &trans     &kp HASH       &kp J   &kp LPAR  &kp RPAR  &kp SEMI      &kp PIPE
+&kp LSHFT  &kp Z             &kp X              &kp C       &kp V          &kp BACKSLASH  &mkp LCLK    &mkp RCLK  &kp AMPERSAND  &kp M   &kp LBRC  &kp RBRC  &kp UP_ARROW  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN      &kp LEFT_ALT       &kp DEL     &kp BACKSPACE  &kp ENTER      &lt 1 SPACE  &mo 2      &mo 3          &trans  &trans    &kp LEFT  &kp DOWN      &kp RIGHT
             >;
         };
 
         layer2_Number {
             bindings = <
-&trans  &trans  &trans   &trans      &trans         &trans                     &trans           &trans           &trans           &trans           &trans           &trans
-&trans  &kp F9  &kp F10  &kp F11     &kp F12        &trans                     &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &trans
-&trans  &kp F5  &kp F6   &kp F7      &kp F8         &trans     &trans  &trans  &kp LS(TAB)      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &trans
-&trans  &kp F1  &kp F2   &kp F3      &kp F4         &trans     &trans  &trans  &kp TAB          &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &trans
-&trans  &trans  &trans   &kp DELETE  &kp BACKSPACE  &kp ENTER  &trans  &trans  &kp KP_NUMBER_0  &trans           &trans           &kp EQUAL        &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans   &trans      &trans         &trans                     &trans       &trans           &trans           &trans           &trans           &trans
+&trans  &kp F9  &kp F10  &kp F11     &kp F12        &trans                     &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &trans
+&trans  &kp F5  &kp F6   &kp F7      &kp F8         &trans     &trans  &trans  &kp LS(TAB)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &trans
+&trans  &kp F1  &kp F2   &kp F3      &kp F4         &trans     &trans  &trans  &kp TAB      &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &trans
+&trans  &trans  &trans   &kp DELETE  &kp BACKSPACE  &kp ENTER  &trans  &trans  &kp KP_N0    &trans           &trans           &kp EQUAL        &kp KP_MULTIPLY  &trans
             >;
         };
 
