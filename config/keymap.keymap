@@ -8,6 +8,13 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    zip_temp_layer_custom: zip_temp_layer_custom {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <150>;
+        excluded-positions = <19 20 21 33 34 35 36 38 44 45 47 48 49 50 52 53 54>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
