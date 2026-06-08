@@ -12,7 +12,7 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <150>;
-            excluded-positions = <14 15 16 17 19 20 21 33 34 35 36 38 40 41 42 44 45 47 48 49 50 52 53 54>;
+        excluded-positions = <14 15 16 17 19 20 21 33 34 35 36 38 40 41 42 44 45 47 48 49 50 52 53 54 57>;
     };
 
     keymap {
@@ -64,7 +64,17 @@
 &trans  &trans  &kp LC(W)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(T)                  &trans  &msc MOVE_X(-50)  &mkp MCLK  &msc MOVE_X(50)   &trans     &trans
 &trans  &trans  &trans     &trans           &trans       &trans     &trans  &trans  &trans  &mkp LCLK         &mkp RCLK  &msc MOVE_Y(50)   &kp PG_UP  &trans
 &trans  &trans  &kp K_CUT  &kp K_COPY       &kp K_PASTE  &trans     &trans  &trans  &trans  &mkp MB4          &mkp MB5   &msc MOVE_Y(-50)  &kp PG_DN  &trans
-&trans  &trans  &trans     &trans           &trans       &trans     &trans  &trans  &trans  &trans            &trans     &trans            &trans     &trans
+&trans  &trans  &trans     &trans           &trans       &mo 5      &trans  &trans  &trans  &trans            &trans     &trans            &trans     &trans
+            >;
+        };
+
+        layer5_Snipe {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
