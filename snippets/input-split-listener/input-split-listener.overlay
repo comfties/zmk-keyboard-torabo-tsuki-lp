@@ -1,3 +1,6 @@
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+
 /{
     split_inputs {
         #address-cells = <1>;
